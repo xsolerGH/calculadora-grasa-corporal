@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora de % de Grasa Corporal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Calculadora de % de Grasa Corporal</h1>
+  <form id="fatForm">
+    <label>
+      Género:
+      <select id="gender" name="gender" required>
+        <option value="male">Hombre</option>
+        <option value="female">Mujer</option>
+      </select>
+    </label>
+    <br>
+
+    <label>
+      Cintura (cm):
+      <input type="number" id="waist" name="waist" required min="1" step="any">
+    </label>
+    <br>
+
+    <label>
+      Cuello (cm):
+      <input type="number" id="neck" name="neck" required min="1" step="any">
+    </label>
+    <br>
+
+    <label id="hipLabel" style="display: none;">
+      Cadera (cm):
+      <input type="number" id="hip" name="hip" min="1" step="any">
+    </label>
+    <br>
+
+    <label>
+      Estatura (cm):
+      <input type="number" id="height" name="height" required min="1" step="any">
+    </label>
+    <br>
+
+    <button type="submit">Calcular % de Grasa</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
